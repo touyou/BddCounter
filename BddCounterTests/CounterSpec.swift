@@ -69,5 +69,33 @@ class CounterSpec: QuickSpec {
                 }
             }
         }
+
+        describe("永続化") {
+            context("現在値が2") {
+                var counter: Counter!
+                var counterStorageMock: CounterStorageMock!
+
+                beforeEach {
+                    counterStorageMock = CounterStorageMock()
+                    counter = Counter(count: 2, counterStorage: counterStorageMock)
+                }
+
+                context("#incrementを呼び出す") {
+                    it("CounterStorage.save()が引数3で呼び出されること") {
+                        counter.increment()
+
+                        expect(counterStorageMock.latestSaveCount).to(equal(3))
+                    }
+                }
+
+                context("#decrementを呼び出す") {
+                    it("CounterStorage.save()が引数1で呼び出されること") {
+                        counter.decrement()
+
+                        expect(counterStorageMock.latestSaveCount).to(equal(1))
+                    }
+                }
+            }
+        }
     }
 }

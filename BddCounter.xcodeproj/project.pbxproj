@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		464BB84A239F84EF0037F76A /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BB81E239F82540037F76A /* CounterViewController.swift */; };
 		464BB84D239F87310037F76A /* CounterViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BB84B239F85D20037F76A /* CounterViewControllerTests.swift */; };
 		467BD3B6239F90A7001F0F6C /* CounterViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467BD3B5239F90A7001F0F6C /* CounterViewControllerSpec.swift */; };
+		46DFB4AC23A0FF440099221A /* CounterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DFB4AB23A0FF440099221A /* CounterSpec.swift */; };
 		696A6AE1B4A60FDA8D745F40 /* Pods_BddCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6A5E609C47D18D6D4BF901 /* Pods_BddCounter.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		464BB833239F82560037F76A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		464BB84B239F85D20037F76A /* CounterViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewControllerTests.swift; sourceTree = "<group>"; };
 		467BD3B5239F90A7001F0F6C /* CounterViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewControllerSpec.swift; sourceTree = "<group>"; };
+		46DFB4AB23A0FF440099221A /* CounterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterSpec.swift; sourceTree = "<group>"; };
 		75D98F2888EB752DA36B7D74 /* Pods-BddCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BddCounter.debug.xcconfig"; path = "Target Support Files/Pods-BddCounter/Pods-BddCounter.debug.xcconfig"; sourceTree = "<group>"; };
 		8467571CDEA17EBC9BA9D73A /* Pods-BddCounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BddCounterTests.release.xcconfig"; path = "Target Support Files/Pods-BddCounterTests/Pods-BddCounterTests.release.xcconfig"; sourceTree = "<group>"; };
 		CA6A5E609C47D18D6D4BF901 /* Pods_BddCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BddCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +89,6 @@
 				44ADC70C29186BAD9B3F9C8C /* Pods-BddCounterTests.debug.xcconfig */,
 				8467571CDEA17EBC9BA9D73A /* Pods-BddCounterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,6 +132,7 @@
 				464BB84B239F85D20037F76A /* CounterViewControllerTests.swift */,
 				464BB833239F82560037F76A /* Info.plist */,
 				467BD3B5239F90A7001F0F6C /* CounterViewControllerSpec.swift */,
+				46DFB4AB23A0FF440099221A /* CounterSpec.swift */,
 			);
 			path = BddCounterTests;
 			sourceTree = "<group>";
@@ -314,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				467BD3B6239F90A7001F0F6C /* CounterViewControllerSpec.swift in Sources */,
+				46DFB4AC23A0FF440099221A /* CounterSpec.swift in Sources */,
 				464BB84D239F87310037F76A /* CounterViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
